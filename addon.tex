@@ -1,0 +1,85 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{german}
+\usepackage{amsfonts,amsmath,amssymb,bbm,wasysym,mathrsfs}
+\usepackage{enumerate}
+\usepackage{makeidx}
+\usepackage[german,norefeq,norefpage]{nomencl}
+\makeindex
+\makeglossary
+\usepackage{graphicx,color}
+\usepackage[nottoc]{tocbibind}
+\usepackage[only, lightning]{stmaryrd}
+%\usepackage[squaren]{SIunits}
+\makeatletter
+\providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\@}
+\providecommand{\fertig}{$\blacksquare$}
+\usepackage{geometry}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\hoffset=5 pt
+\headheight =28pt
+\headsep=20pt
+\footskip = 40pt
+\textheight =650pt
+\fancyfoot{\empty}
+\fancyfoot[L]{\today}
+\fancyfoot[R]{\thepage}
+\fancyhead{\empty}
+\lhead{
+\begin{picture}(0,0)
+\put(-80,-340){\line(10,0){10}}
+\end{picture}
+}
+\rhead{\hfill {\bf \leftmark}\newline\rightmark}
+\usepackage{tocloft}
+\addtolength{\cftsecindent}{-1em}
+\addtolength{\cftsecnumwidth}{1em}
+\usepackage{xy}
+	\input xy
+	\xyoption{all}
+\usepackage{theorem}
+	\theorembodyfont{\upshape}
+	\newtheorem{definition}{Definition:}[section]
+	\newtheorem{satz}[definition]{Satz:}
+	\newtheorem{kor}[definition]{Korollar:}
+	\newtheorem{prop}[definition]{Proposition}
+	\newtheorem{lemma}[definition]{Lemma:}
+	\newtheorem{bem}[definition]{Bemerkung:}
+	\newtheorem{beispiel}[definition]{Beispiel:}
+	\newtheorem{beob}[definition]{Beobachtung:}
+
+	\renewcommand{\thesection}{\Roman{section}}
+	\renewcommand{\thesubsection}{\arabic{subsection}}
+	
+	\newcommand{\beweis}[1]{\begin{description}\item[\ul{Beweis:}] #1 \hfill\fertig\end{description}}
+	
+	\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\R}{\mathbb R}
+	\newcommand{\Q}{\mathbb Q}\newcommand{\C}{\mathbb C}
+	\newcommand{\surj}{\twoheadrightarrow}
+	\newcommand{\inj}{\rightarrowtail}
+	\newcommand{\ra}{\rightarrow}
+	\newcommand{\ramit}[1]{\stackrel{#1}{\longrightarrow}}
+	\newcommand{\impl}{\Rightarrow}\newcommand{\lpmi}{\Leftarrow}
+	\newcommand{\implmit}[1]{\stackrel{#1}{\Longrightarrow}}
+	\newcommand{\lpmimit}[1]{\stackrel{#1}{\Longleftarrow}}
+	\newcommand{\gleichmit}[1]{\stackrel{#1}{=}}
+	\newcommand{\seq}{\subseteq }
+	\newcommand{\ul}{\underline }
+	\newcommand{\inv}[1]{#1^{-1}}
+	\newcommand{\eq}{\Leftrightarrow}
+	\newcommand{\eqmit}[1]{\stackrel{#1}{\eq}}
+	\newcommand{\eps}{\varepsilon}
+	\renewcommand{\ker}[1]{{\bf ker} #1 }
+	\newcommand{\norm}[1]{\|{ #1 }\|}
+	\newcommand{\ol}[1]{\overline{#1}}
+	\newcommand{\durch}[1]{\frac{1}{#1}}
+	\newcommand{\leer}{\emptyset}
+	\newcommand{\et}{\wedge}
+	\newcommand{\vel}{\vee}
+	\newcommand{\ovec}{\mathfrak o}
+	\newcommand{\innprod}[2]{<\hspace*{-0.15cm} #1|#2\hspace*{-0.15cm} >}
+	\newcommand{\wid}{\mbox{\large\mbox{$\lightning$}}}
+	\newcommand{\todo}[1]{\mbox{\textcolor{red}{$\clubsuit$} #1 \textcolor{red}{$\spadesuit$}}}
+	\newcommand{\pr}{\mbox{pr}}
+	\newcommand{\blitzmit}[2]{\stackrel{\stackrel{#2}{\lightning}}{#1}}

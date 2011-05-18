@@ -1,0 +1,13 @@
+#FIG 3.2  Produced by xfig version 3.2.5-alpha5
+Landscape
+Center
+Metric
+A4      
+100.00
+Single
+-2
+1200 2
+4 1 0 50 -1 0 12 1.3963 6 210 525 675 1035 $\\leq$\001
+4 0 0 50 -1 0 12 0.0000 6 210 3300 405 1485 $V_1\\leftarrow\\cdots\\rightarrow V_2$\001
+4 1 0 50 -1 0 12 1.7453 6 210 525 1305 1035 $\\leq$\001
+4 0 0 50 -1 0 12 0.0000 6 210 1320 675 855 $V_1\\cap V_2$\001
