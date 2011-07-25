@@ -1,4 +1,4 @@
-\documentclass[a4paper,12pt]{article}
+%\documentclass[a4paper,12pt]{article}
 \input{addon.tex}
 \setcounter{section}{-1}
 \title{Grundbegriffe der Topologie\vspace*{-0.3cm}\\{\scriptsize nach einer Vorlesung von Michael Grosser}\\WS 0405}
@@ -382,12 +382,12 @@ Sei X eine Menge und $\forall x\in X$ sei $\umg{V}{x}$ ein Mengensystem auf X ($
 \begin{description}
 \item[(U4+)] $\forall U\in \umg{V}{x}\exists V\in\umg{V}{x}: V\seq U \wedge\forall y\in$\framebox{$V\in\umg{V}{y}$}
 \end{description}
-\beweis{ Sei $U\in\umg{V}{x}$ setze
+\beweis{\ Sei $U\in\umg{V}{x}$ setze
 \begin{equation}
 W:=\{ y\in U|U\in\umg{V}{y}\} \label{star1}
 \end{equation}
 \item Wir zeigen: W erf"ullt die Anforderungen an V in (U4+):
-\item[($W\in\umg{V}{x}$)] denn $\implmit{(U4)}\exists V\in\umg{V}{x}, V\seq U: \underbrace{\forall y\in V:U\in\umg{V}{y}}_{\mbox{\ref{star1}}\impl V\seq W}\implmit{U3} W\in\umg{V}{y}$\vspace*{-0.5cm}
+\item[($W\in\umg{V}{x}$)] denn $\implmit{(U4)}\exists V\in\umg{V}{x}, V\seq U: \underbrace{\forall y\in V:U\in\umg{V}{y}}_{\mbox{\ref{star1}}\impl V\seq W}\implmit{U3} W\in\umg{V}{x}$\vspace*{-0.5cm}
 \item[($W\seq U$)] gilt per definitionem
 \item[($W\in \umg{V}{y}$)] Sei $y\in W\impl  U\in \umg{V}{y}\implmit{U4}\exists V\seq U, V\in\umg{V}{y}\underbrace{\forall z\in V}_{\mbox{$|\hspace*{-0.03cm}|$}}:U\in\umg{V}{z}\vspace*{-0.45cm}\\
 \hspace*{6.75cm}\implmit{\mbox{\ref{star1}}} z\in W\Longrightarrow V\seq W\\
@@ -1173,15 +1173,15 @@ $x_n=n\neq x_i$ {\scriptsize $(i\in\{ 1\dots ,m\}$} $\impl x_n \in V\seq U\impl 
 
 \begin{satz}\label{3.14}{\sc Eindeutigkeit ist "aquivalent mit $\trax_2$}
 In einem topologischen Raum $(X,\T$) sind die Grenzwerte genau dann eindeutig, wenn das \ul{Trennungsaxiom}\index{Trennungsaxiom!$\trax_2$} $\trax_2$ erf"ullt ist.\vspace*{-0.5cm}\\
-$$\trax_2:\forall x\neq y\in X\forall U\in\umg{U}{x}\et \forall V\in\umg{U}{y}:U\cap V=\leer$$
+$$\trax_2:\forall x\neq y\in X\exists U\in\umg{U}{x}\et \exists V\in\umg{U}{y}:U\cap V=\leer$$
 Ein topologischer Raum der $\trax_2$ erf"ullt wird auch {\sc Hausdorff}-Raum\index{Hausdorff-Raum@{\sc Hausdorff}-Raum} genannt.\vspace*{-0.5cm}\\
 \beweis{
 \item[($\impl$)] Indirekt angenommen: Sei $\trax_2$ verletzt d.h.:\\
-$\exists x\neq y\in X:U\in\umg{U}{x}\et\exists V\in\umg{U}{y} :U\cap V\neq\leer$;\\
+$\exists x\neq y\in X:\forall U\in\umg{U}{x}\et\forall V\in\umg{U}{y} :U\cap V\neq\leer$;\\
 Seien $\umgbas{V}{x}$, $\umgbas{V}{y}$ Umgebungsbasen von $x$ bzw. $y$ und\\
 $\Lambda :=\{ (U,V)|U\in\umgbas{V}{x},V\in\umgbas{V}{y}\}$\\
 $(U_1,V_1)\preceq (U_2,V_2):\eq U_1\supseteq U_2\et V_1\supseteq V_2$ dann ist:\\
-$(\Lambda ,\preceq )$ gerichtete Menge. F"ur $(U,V)\in\Lambda$ w"ahle man $z\in U\cap V (\neq\leer )$ und definiere das Netz: $(x_{(U,V)}:=z$ (genau dieses) dann gilt:\\
+$(\Lambda ,\preceq )$ gerichtete Menge. F"ur $(U,V)\in\Lambda$ w"ahle man $z\in U\cap V (\neq\leer )$ und definiere das Netz: $x_{(U,V)}:=z$ (genau dieses) dann gilt:\\
 $x_{(U,V)}\ra x{}^{(+)}$ und $x_{(U,V)}\ra y{}^{(++)}$:\\
 ad${}^{(+)}: W\in\umgbas{V}{x}\impl\exists U_0\in\umgbas{V}{x}: U_0\seq W; V$(bel.)$\in\umgbas{V}{y}$\\
 f"ur $(U,V)\succeq (U_0,V_0)$ gilt: $U\seq U_0$ und somit $x_{(U,V)}\in U\cap V\seq U\seq U_0\seq W$ d.h. $x_{(U,V)}\ra x$; ad${}^{(++)}$ analog\\
@@ -1258,7 +1258,10 @@ F"ur normale R"aume gelten wichtige S"atze "uber Existenz und Fortsetzbarkeit st
 \end{bem}
 \begin{beispiel}\label{3.18} zu Trennungsaxiome:
 \begin{enumerate}
-\item Die Klumpentopologie auf einer Menge mit mindestens zwei Elementen erf"ullt $\trax_1$.
+\item Die Klumpentopologie auf einer Menge mit mindestens zwei Elementen
+    erf"ullt keines der Trennungsaxiome $\trax_0$, $\trax_1$,
+    $\trax_2$, regu"ar, normal; sehr wohl aber $\trax_3$ und $\trax_4$, da es gar
+    keine nichttrivialen $x\in A$ bzw. $A\cap B =\empty$ ($A$, $B$ abg.) gibt.
 \item Ein unendlicher Raum X mit kofiniter Topologie erf"ullt $\trax_1$ (die offene Umgebung $X\setminus \{ x\}$ trennt x von allen $y\in X$) aber nicht $\trax_2$ (da $U\cap V$ ist stets unendlich, da $(U\cap V)^c =U^c\cap V^c$ endlich ist).
 \item Die {\sc Niemytzki}-Halbebene ist regul"ar aber nicht normal (ohne Beweis).
 \includegraphics{./pic/niemytzkiright.eps}

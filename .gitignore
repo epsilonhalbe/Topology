@@ -1,0 +1,17 @@
+*~
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.glo
+*.idx
+*.ilg
+*.ind
+*.log
+*.out
+*.toc
+*.png
+*.ps
+*.svg
+*.fdb*
+*.pdf
