@@ -8,8 +8,22 @@ Jeder der Verbesserungen etc. einbauen will - bzw daraus lernt ist frei dies zu 
 Für alle englischsprachige Kollegen: leider ist dieses Skript auf Deutsch.
 Viel Vergnügen und Erfolg beim lernen und lesen.
 
+Um dieses Dokument in ein PDF zu verwandeln verwende einfach PDFLaTeX:
+
+> pdflatex topologie.tex
+
+Sollte jemand Fehler jeglicher Art finden bitte benutzt die [issues section auf github](https://github.com/epsilonhalbe/Topology/issues)
+oder schickt mir einen pull-request, ich bin immer froh um Verbesserungen
+
 This is my script of a lecture of topology - by Michael Grosser held at the University of Vienna.
 Everyone who wants to improve this document or correct mistakes - is free to do this.
 Unfortunately this script is written in German - so all English speaking folks have to learn a little German
 before reading this.
 At last have fun and good luck reading and learning.
+
+To compile this document use
+
+> pdflatex topologie.tex
+
+If you find errors or typos feel free to use the [issues section on github](https://github.com/epsilonhalbe/Topology/issues)
+or send me a pull request I'll be happy to merge your improvements.
