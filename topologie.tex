@@ -143,7 +143,7 @@ $x_\infty :=\lim_{n\ra\infty }x_n:\eq \forall\eps >0:\exists N\in\N:\forall n\ge
 ''Wie werden wir die zahlenm"a"sige Angabe $ \eps\in\R $ los ?''
 \begin{definition}\label{1.6}\index{Umgebung}{Umgebung von x}\\
 Sei (X,d) ein metrischer Raum, $x\in X$ und $U\seq X$, dann hei"st :\\$U$ \ul{Umgebung von x} $:\eq \exists\eps >0:B_\eps (x)\seq U$\vspace*{-0.5cm}\\
-\hspace*{8cm}\includegraphics[scale=1]{./pic/umgeb.eps}\vspace*{-4cm}\\
+\hspace*{8cm}\includegraphics[scale=1]{./pic/umgeb}\vspace*{-4cm}\\
 Jeder (offene) $\eps$-Ball mit Mittelpunkt $x$\\
 ist also Umgebung von x,\\
 und "uberdies jede ''gr"o"sere'' Menge,\\
@@ -190,11 +190,11 @@ $G\seq X$ hei"st \ul{offen}:$\eq \forall x\in G$: G ist Umgebung von x\\
 \end{definition}
 $\eps$ wird im Allgemeinen von x abh"angen:\\ je n"aher x am ''Rand'' von G liegt,\\ umso kleiner muss $\eps$ gew"ahlt werden.
 \vspace*{-3.7cm}\\
-\hspace*{10cm}\includegraphics[scale=0.9]{./pic/1.11.eps}
+\hspace*{10cm}\includegraphics[scale=0.9]{./pic/1-11}
 \begin{prop}\label{1.12}{offene B"alle sind offene Mengen}
 \beweis{
 Sei $y\in B_\eps (x)\implmit{!}$ setze $\eps ':=\eps-d(x,y)$\vspace*{-1.3cm}\\
-\hspace*{8.5cm}\includegraphics[scale=0.7]{./pic/ball.eps}\\
+\hspace*{8.5cm}\includegraphics[scale=0.7]{./pic/ball}\\
 \hspace*{-0.8cm}Sei $z\in B_{\eps '}(y)\implmit{\triangle -Ungl.} d(x,z)\leq d(x,y) + \underbrace{d(y,z)}_{< \eps '}\hspace*{-0.01cm}< d(x,y) + (\eps - d(x,y))=\eps$
 \vspace*{-0.3cm}
 }
@@ -277,8 +277,8 @@ x& \mbox{f"ur }-1\leq x\leq0\\
 2-x&\mbox{f"ur }0 < x\leq +1
 \end{array}\right.$\\
 \begin{center}
-\includegraphics[scale=0.7]{./pic/unstet1.eps}
-\includegraphics[scale=0.7]{./pic/unstet2.eps}
+\includegraphics[scale=0.7]{./pic/unstet1}
+\includegraphics[scale=0.7]{./pic/unstet2}
 \end{center}
 $f([-1,+1])=[-1,0]\cup [1,2)$\\
 $f(0)=0, f(1)=1$ aber f"ur kein $x\in [-1,+1]$ ist $f(x)=\durch{2} $.
@@ -292,7 +292,7 @@ Dahinter steckt der topologische Satz \ref{7.3}: {\it Stetige Bilder zusammenh"a
 \section{Topologische R"aume}
 \subsection{Der 7 bis 11-fach Pfad zum Haus der Topologie}
 \begin{center}
-\includegraphics[scale=0.8]{./pic/topoweg.eps}
+\includegraphics[scale=0.8]{./pic/topoweg}
 \end{center}
 Es gibt verschiedene (jedoch gleichwertige) Zug"ange zum Begriff des topologischen Raumes. Ich(=Grosser Michael) habe f"ur diese Vorlesung diese 7 ausgew"ahlt.\\
 Wir(=Grosser Michael) w"ahlen offene Mengen als ''unsere'' Definition.\\
@@ -426,7 +426,7 @@ $$\forall U\in\umg{U}{x}\exists W\in\umgbas{W}{x}:(x\in )W\seq U$$
 Sei (X,$\T$) ein topologischer Raum, f"ur ein System $\umgbas{W}{x} (x\in X)$ von Umgebungsbasen gilt dann:
 \begin{description}
 \item[(UB1)] $\forall W\in\umgbas{W}{x}:x\in W$[$\impl W\neq\leer$]
-\vspace*{-1.5cm}\item[(UB2)] $\forall W_1,W_2\in\umgbas{W}{x}\exists W_3\seq W_1\cap W_2$\footnote{(UB1) und (UB2) sind auch die Grundeigenschaften(FB1) und (FB2) einer \ul{Filterbasis}}\includegraphics[scale=0.7]{./pic/umgbas.eps}\\
+\vspace*{-1.5cm}\item[(UB2)] $\forall W_1,W_2\in\umgbas{W}{x}\exists W_3\seq W_1\cap W_2$\footnote{(UB1) und (UB2) sind auch die Grundeigenschaften(FB1) und (FB2) einer \ul{Filterbasis}}\includegraphics[scale=0.7]{./pic/umgbas}\\
 \item[(UB4)] $\forall W\in \umgbas{W}{x}\exists V\in\umgbas{W}{x}:V\seq W\in\umgbas{W}{x} \wedge\forall y\in V\exists W_y\in\umgbas{W}{y}:W_y\seq W$
 \end{description}
 \beweis{
@@ -465,7 +465,7 @@ Sei (X,d) ein metrischer Raum, $x\in X$; sei $\umgbas{V}{x}:=\{ B_\eps (x)|\eps 
 (UB1) $x\in B_\eps (x) \surd $\\
 (UB2) $W_1=B_{\eps_1} (x),W_2 = B_{\eps_2} (x), W_3=B_{\min\{\eps_1,\eps_2\}} (x)$, d.h. $W_3 = W_1\cap W_2$
 (UB4) F"ur gegebenes $W=B_{\eps} (x)$ ist auch $V=B_{\frac{\eps}{2}} (x)\in\umgbas{V}{x}$\\
-\includegraphics[scale=0.8]{./pic/ub4.eps}\vspace*{-4.1cm}\\
+\includegraphics[scale=0.8]{./pic/ub4}\vspace*{-4.1cm}\\
 \hspace*{6.5cm}\vspace*{0.1cm}$V\seq W$ und $\forall y\in V$ ist\\
 \hspace*{6.5cm}\vspace*{0.1cm}$W_y = B_\frac{\eps}{2} (x)\seq B_{\eps} (x)=W$\\
 \hspace*{6.5cm}\vspace*{0.1cm}[nach $\triangle$-Ungleichung]\\
@@ -478,7 +478,7 @@ es geben die $p=(a,b)\in X$\\ eine Umgebungsbasis an.\\
 $b>0$ dann $\umg{W}{p}:=\{B_{\eps} (p)|b\geq\eps>0 \}$\\
 $b=0$ dann $\umg{W}{p}:=\{C_\eps(p)|\eps >0\}$ mit\\ $C_\eps (p):=\{B_\eps (m)|m=(a,\eps)\}\cup\{ p\}$\\
 Ist eine Umgebungsbasis $\stackrel{\ref{2.13}}{\leadsto}$ Niemytzki-Topologie.\\
-\vspace*{-5.5cm}\\ \hspace*{9cm}\includegraphics[scale=0.7]{./pic/niemytzkiright.eps}\\
+\vspace*{-5.5cm}\\ \hspace*{9cm}\includegraphics[scale=0.7]{./pic/niemytzkiright}\\
 
 \end{enumerate}
 \end{beispiel}
@@ -575,7 +575,7 @@ $$\xymatrix@R=-0.1cm{
 Seien $(X_i,\T_i)_(i\in I)$ topolog. R"aume, wir definieren auf $X=\prod_{i\in I}X_i=\{ (x_i)_{i\in I}:x_i\in X_i\}$ die Produkttopologie $\T =\prod_{i\in I}\T_i$ als die von der Subbasis:\\
 $\Sb =\{ S=\prod_{i\in I}Y_i:Y_i=X_i \mbox{ $\forall i$ au"ser einem bel. $i_0$ f"ur dieses sei } Y_{i_0}\in \T_{i_0}\}$\\
 Wie sehen endliche Durchschnitte von Mengen aus $\Sb$ aus ?\\
-\hspace*{9.5cm}\includegraphics[scale=0.5]{./pic/subbasis.eps}\vspace*{-5cm}\\
+\hspace*{9.5cm}\includegraphics[scale=0.5]{./pic/subbasis}\vspace*{-5cm}\\
 Ist I endlich:\\
 typischerweise so: $Y_1\times\dots\times Y_n$ $(Y_i\in\T_i)$\\
 also n-dimensionale Quader/Intervalle\\
@@ -627,7 +627,7 @@ $X\setminus X=\leer\in\T \impl X\in\A$
 Sei hier immer (X,$\T$) ein topologischer Raum und $A\seq X$ und $x\in X$
 
 Aussagen "uber eine Teilmenge A von X :\\
-\hspace*{10cm}\includegraphics[scale=0.4]{./pic/AAc.eps}\vspace*{-2.7cm}\\
+\hspace*{10cm}\includegraphics[scale=0.4]{./pic/AAc}\vspace*{-2.7cm}\\
 $A\seq X\dots\dots$ mengentheoretisch: $A$\\
 \hspace*{6cm} $A^c$\\
 \hspace*{2.6cm}topologisch: Inneres von A\\
@@ -873,7 +873,7 @@ $A'\seq \ol{A} $ denn $ x\in A'\impl $ (vergiss $y\neq x$ in der Definition) $\i
 \beweis{$\ol{A}\gleichmit{\ref{2.44}}A\cup A'\gleichmit{\ref{2.42}ii}(\isol{A}\cup \underbrace{(A'\cap A)}_{\seq A'}) \cup A' =\isol{A}\cup A'$
 }
 \end{lemma}
-\includegraphics[scale=0.6]{./pic/2.45.eps}
+\includegraphics[scale=0.6]{./pic/2-45}
 
 \subsection{Dichtheit, Separabilit"at und Abz"ahlbarkeitsaxiome}
 
@@ -1053,7 +1053,7 @@ Wir sehen \ref{3.1} erm"oglicht im Vergleich zu $\N$ sowohl:
 \begin{itemize}
 \item Indexmengen die in der ''H"ohe'' viel mehr Elemente als $\N$ haben. z.B: [0,$+\infty)$
 \item Indexmengen die in der ''Breite'' viel mehr Elemente als $\N$ haben. z.B: $\umgbas{V}{x}$
-\includegraphics{./pic/indexsets.eps}
+\includegraphics{./pic/indexsets}
 \end{itemize}
 \begin{definition}\label{3.4}\index{Netz}Netz\\
 Sei X eine Menge und $\Lambda$ eine beliebige gerichtete Menge , dann hei"st eine Abbildung $x:\Lambda\ra X$ \ul{Netz}.\\
@@ -1200,15 +1200,15 @@ In nicht {\sc Hausdorff}-R"aumen aufpassen mit der Schreibweise $\lim_{\lambda\i
 Sei ($X,\T$) topologischer Raum
 \begin{enumerate}[$\trax_1$]\setcounter{enumi}{-1}
 \item $\forall x\neq y\in X(\exists U\in\T :x\in U,y\notin U)\vel (\exists V\in\T :x\notin V,y\in V)$\\
-\includegraphics{./pic/T0_1.eps} \ul{\sc oder}\includegraphics{./pic/T0_2.eps}
+\includegraphics{./pic/T0_1} \ul{\sc oder}\includegraphics{./pic/T0_2}
 \item $\forall x\neq y\in X(\exists U\in\T :x\in U,y\notin U)\et (\exists V\in\T :x\notin V,y\in V)$\\
-\includegraphics{./pic/T0_1.eps} \ul{\sc und}\includegraphics{./pic/T0_2.eps}
+\includegraphics{./pic/T0_1} \ul{\sc und}\includegraphics{./pic/T0_2}
 \item $\forall x\neq y\in X\exists U,V\in\T :x\in U,y\in V:U\cap V=\leer$\\
-\includegraphics{./pic/T2.eps}
+\includegraphics{./pic/T2}
 \item $\forall x\in X, A$(abg.)$\seq X, x\notin A:\exists U,V\in\T :x\in U,A\seq V:U\cap V=\leer$\\
-\includegraphics{./pic/T3.eps}
+\includegraphics{./pic/T3}
 \item $\forall A$(abg.),$B$(abg.)$\seq X, A\cap B=\leer :\exists U,V\in\T :A\seq U, B\seq V:U\cap V=\leer$\\
-\includegraphics{./pic/T4.eps}
+\includegraphics{./pic/T4}
 \end{enumerate}
 \end{definition}
 \newpage
@@ -1247,9 +1247,9 @@ $\xymatrix{
 \item $\trax_1\eq $alle $\{ x\}$ sind abgeschlossen (PS);\\
 daraus folgt: normal $\impl$ regul"ar $\impl$ Hausdorff ($\trax_2$); $\trax_2\impl\trax_1\impl \trax_0$ sind klar.
 \item $\trax_3\eq \forall x\in U$(offen)$\exists V$(offen)$: x\in V\seq\ol{V}\seq U$\\
-\includegraphics{./pic/T3alt.eps}
+\includegraphics{./pic/T3alt}
 \item $\trax_4\eq \forall A$(abg)$\seq U$(offen)$\exists V$(offen)$: A\seq\ol{V}\seq U$\\
-\includegraphics{./pic/T4alt.eps}
+\includegraphics{./pic/T4alt}
 \item Es gibt auch $\trax_{3\durch{2}}$ und $\trax_5$\dots
 \item Jeder \ul{metrische} Raum ist \ul{normal}, und jeder \ul{kompakte} Raum ist \ul{normal}
 F"ur normale R"aume gelten wichtige S"atze "uber Existenz und Fortsetzbarkeit stetiger Funktionen.
@@ -1264,11 +1264,11 @@ F"ur normale R"aume gelten wichtige S"atze "uber Existenz und Fortsetzbarkeit st
     keine nichttrivialen $x\in A$ bzw. $A\cap B =\empty$ ($A$, $B$ abg.) gibt.
 \item Ein unendlicher Raum X mit kofiniter Topologie erf"ullt $\trax_1$ (die offene Umgebung $X\setminus \{ x\}$ trennt x von allen $y\in X$) aber nicht $\trax_2$ (da $U\cap V$ ist stets unendlich, da $(U\cap V)^c =U^c\cap V^c$ endlich ist).
 \item Die {\sc Niemytzki}-Halbebene ist regul"ar aber nicht normal (ohne Beweis).
-\includegraphics{./pic/niemytzkiright.eps}
+\includegraphics{./pic/niemytzkiright}
 \item Die Halbkugeltopologie\index{Halbkugeltopologie}\index{Topologie! Halbkugel-} auf der Halbebene ($\R\times[0,+\infty )$) mit Basisumgebungen:\\
 $B_\eps(x)$ f"ur $x =(a,b)$ mit $0<\eps < b$\\
 $C_\eps(x)$ f"ur $x =(a,0)$ mit $C_\eps(x):=\{ z\in \R\times\R_{>0}| 0<d(x,z)<\eps\}\cup\{ x\}$\\
-\includegraphics{./pic/halfdisc.eps}\\
+\includegraphics{./pic/halfdisc}\\
 erf"ullt $\trax_2$ aber nicht $\trax_3$ (PS).
 \end{enumerate}
 \end{beispiel}
@@ -1412,7 +1412,7 @@ z.B. $f:\R^+\ra\R^+ ; x\mapsto \frac{x}{x+1}$ ist Hom"oomorphismus: $X:= \R^+$ i
 \newpage
 \subsection{Lemma von {\sc Urysohn}}
 F"ur disjunkte abgeschlossene Intervalle (in $\R$) $A=[a,b]$ und $B=[c,d]$ ist es leicht eine stetige Funktion anzugeben mit $f:\R\ra\R$ und $0\leq f\leq 1$, $f|_A =0$ und $f|_B=1$:\\
-\hspace*{4.5cm}\includegraphics{./pic/uryreal.eps}\\
+\hspace*{4.5cm}\includegraphics{./pic/uryreal}\\
 Der folgende wichtige Satz zeigt, dass sich eine derartige stetige Funktion sogar allgemein in normalen topologischen R"aumen und zu disjunkten abgeschlossenen Mengen konstruieren l"asst.
 
 \begin{satz}\label{4.7}{\sc Lemma von Urysohn}\\
@@ -1451,7 +1451,7 @@ $\ul{f(x)=0}:$ F"ur $s\in (0,\eps)\cap D$ nimmt f auf $U:=G_s$ nur Werte in $[0,
 $\ul{f(x)=1}:$ F"ur $r\in (1-\eps ,1)\cap D$ nimmt f auf $U:=X\setminus\ol{G_r}$ nur Werte in $[r,1]\seq (1-\eps,1]$ an; U ist offene Umgebung von x (Beweis wie oben $\alpha ), \beta )$ oben )}
 \end{satz}
 Skizze zum Beweis von \ref{4.7}:\vspace*{2cm}\\
-\hspace*{-1cm}\includegraphics[scale=0.9]{./pic/urysohn.eps}
+\hspace*{-1cm}\includegraphics[scale=0.9]{./pic/urysohn}
 \newpage
 \section{Spurtopologie, initiale und finale Topologie}
 Grunds"atzlich handelt dieses Kapitel davon neue Topologien aus bereits vorhandenen Topologien zu ''basteln'', im speziellen Topologien auf Teilmengen Y eines topologischen Raumes ($X,\T$) (die Spurtopologie auf Y) bzw. per Transport entlang von Abbildungen - gegen (initiale Topologie) und in die Pfeilrichtung (finale Topologie). Die Spurtopologie wird sich letztendlich als Spezialfall der initialen Topologie herausstellen.
@@ -1489,7 +1489,7 @@ Dann gilt:
 \hspace*{1.55cm}\eq\exists G\in\T :Y\setminus A=G\cap Y\\
 \hspace*{1.55cm}\eq\exists G\in\T A= (X\setminus G)\cap Y\\
 \hspace*{1.2cm}\eqmit{X\setminus G=B}\exists B(\T -$abg $):A=B\cap Y$\vspace*{-3cm}\\
-\hspace*{8cm}\includegraphics[scale=1.5]{./pic/5.2ii.eps}
+\hspace*{8cm}\includegraphics[scale=1.5]{./pic/5-2ii}
 \item[(iii)]Wir zeigen: $\ol{A}^X$ ist die kleinste $\T_Y$-abg Menge die A enth"alt, nach \ref{2.34}(iv) somit gleich $\ol{A}^Y:\\
 \bullet \ol{A}^X\cap Y$ ist $\T_Y$-abg nach (ii)\\
 $\bullet\ol{A}^X\cap Y\seq A\cap Y=A\\
@@ -1520,7 +1520,7 @@ M:=\{ x=(x_1,x_2)\in\mathbb{D}^1|x_2\geq 0\}$ abg in $\mathbb{D}^1$ da:\\
 $M=\mathbb{D}^1\cap\{x=(x_1,x_2)\in\R^2|${\scriptsize$\left.\begin{array}{c}-2\leq x_1\leq +2\\0\leq x_2\leq +2\end{array}\right.$}$\}$\\
 aber M ist nicht abgeschlossen in $\R^2$.\\
 \vspace*{-3cm}\\
-\hspace*{7cm}\includegraphics{./pic/5.3.4.eps}\vspace*{-2.5cm}\\
+\hspace*{7cm}\includegraphics{./pic/5-3-4}\vspace*{-2.5cm}\\
 \end{enumerate}
 \end{beispiel}
 \subsection{Fortsetzungssatz von {\sc Tieze-Urysohn}}
@@ -1568,7 +1568,7 @@ will auf Y (am Pfeil\ul{ende} )eine ''interessante'' Topologie $\T_Y$ definieren
 \end{minipage}
 Stetigkeit von $f:(X,\T_X)\ra(Y,\T_Y):$\\
 \hspace*{5cm}$f \mbox{ stetig }\eq\inv{f}(\T_Y)\seq\T_X$\\
-\hspace*{6cm}\includegraphics[scale=0.8]{./pic/5.5.eps}\\
+\hspace*{6cm}\includegraphics[scale=0.8]{./pic/5-5}\\
 \begin{minipage}[l]{7.2cm}
 $\T_Y$ gegeben$\impl\T_X$ muss mindestens so gro"s sein, dass es $\inv{f}(\T_Y)$ enth"alt.\vspace*{0.3cm}\\
 $\T_X$ maximal:$\T_X = 2^X$ (diskret) - ok aber uninteressant.\vspace*{0.3cm}\\
@@ -1612,7 +1612,7 @@ $\iota:Y\ra (X,\T_X); Y\seq X$ und $\iota (y)=y$ die \ul{Einbettungsabbildung vo
 \inv{\iota}(A)=A\cap Y$, denn $x\in \inv{\iota}(A)\eq\\
 x\in Y\et \iota (x)[=x]\in A\eq x\in A\cap Y$\\
 Veranschaulichung:\\
-\includegraphics{./pic/einbettung.eps}\\
+\includegraphics{./pic/einbettung}\\
 Nach Def der initialen Topologie $\T_Y$ ist:\\
 {\footnotesize $\T_Y:=\{\inv{\iota}(H)|H\in\T_X\}=\{H\cap Y|H\in\T_X\}$}
 $\impl\T_Y$ ist die Spurtopologie\index{Spurtopologie}, sie ist somit die gr"obste sodass $\iota$ stetig ist.
@@ -1621,14 +1621,14 @@ $\impl\T_Y$ ist die Spurtopologie\index{Spurtopologie}, sie ist somit die gr"obs
 \ul{finale Topologie} bez. p$:(X,\T_X)\ra Y$,\\
 Y$:=\hspace*{-0.1cm}\{K|\hspace*{-0.2cm}\left.\begin{array}{l}\mbox{\scriptsize K "Aquivalenzklasse bez. fixer}\\\mbox{\scriptsize "Aquivalenzrelation $\sim$ auf X}\end{array}\right.\hspace*{-0.2cm}\}\hspace*{-0.15cm}=\hspace*{-0.1cm}X/\hspace*{-0.1cm}_\sim$ und p$(x)=K$, wobei $x\in K$; p hei"st \ul{kanonische Projektion von X auf $X/\hspace*{-0.1cm}_\sim$}
 Veranschaulichung\\
-\includegraphics{./pic/projection.eps}\\
+\includegraphics{./pic/projection}\\
 $\T_Y=\{ H\seq X/_\sim |\inv{\mbox{p}}(H)\in\T_X\}$ \ul{Quotiententopologie bez. $\T_X$ auf $X/_\sim$}\\
 Beispiel: V VR, W TR von V, $v_1\sim v_2 :\eq v_1-v_2\in W, V/_\sim = V/_W$\vspace*{1.7cm}
 \end{minipage}\vspace*{0.1cm}\\
 \newpage
 {\bf V.5.b }\label{5.5.b}{\sc Transport von Topologien entlang mehrerer Abbildungen}\vspace*{0.4cm}\\
 \begin{minipage}{7cm}
-\includegraphics{./pic/initmehr.eps}\\
+\includegraphics{./pic/initmehr}\\
 Gesucht als \ul{initiale Topologie}: Gr"obste Topologie $\T_X$ auf X sodass alle $f_i$ stetig sind, d.h. $\inv{f_i}(\T_i)\seq\T_X\quad \forall i\in I\\
 \impl\T_X$ minimal, sodass gilt:
 $$\T_X\supseteq\hspace*{-0.8cm} \underbrace{\bigcap_{i\in I}\inv{f_i}(\T_i)}_{\mbox{\scriptsize erf"ullt i.A. nicht (O1)-(O3)}}$$
@@ -1639,7 +1639,7 @@ Die $\inv{f_{i_1}}(H_{i_1})\cap\dots\cap\inv{f_{i_n}}(H_{i_n})$ bilden eine Basi
 Die bel. Vereinigungen solcher endl. Durchschnitte bilden die offenen Mengen von $\T_X$}
 \end{minipage}\hspace*{0.5cm}
 \begin{minipage}{7cm}
-\includegraphics{./pic/finamehr.eps}\\
+\includegraphics{./pic/finamehr}\\
 Gesucht als \ul{finale Topologie}: Feinste Topologie $\T_Y$ auf Y, sodass alle $f_i$ stetig sind, d.h. $\inv{f_i}(\T_Y)\seq\T_i\quad\forall i\in I$\\
 $\T_Y:=\{ H\seq Y|\forall i\in I:\inv{f_i}(H)\in\T_i\}$\\
 erf"ullt (O1)-(O3) (Beweis analog zu V.5.a)\vspace*{4.8cm}\\
@@ -1649,8 +1649,8 @@ erf"ullt (O1)-(O3) (Beweis analog zu V.5.a)\vspace*{4.8cm}\\
 Seien $(X_i,\T_i)$, ($\forall i\in I$) Topologische R"aume, Sei $X=\prod_{i\in I}X_i$. F"ur $k\in I$(bel, fix) sei die ''\ul{k-te Projektionsabbildung}'' $\pr_k: X\ra X_k; (x_i)_{i\in I}\mapsto x_k$\vspace*{1cm}\\
 vgl. $\pr_1:\R^2\ra\R ,(x_1,x_2)\mapsto x_1$\\
 $\pr_2:\R^2\ra\R ,(x_1,x_2)\mapsto x_2$\vspace*{-2cm}\\
-\hspace*{5.5cm}\includegraphics[scale=0.7]{./pic/pr.eps}\\
-\includegraphics{./pic/projektionsabb.eps}\\
+\hspace*{5.5cm}\includegraphics[scale=0.7]{./pic/pr}\\
+\includegraphics{./pic/projektionsabb}\\
 Was ist die initiale Topologie $\T_X$ auf X bez"uglich der $\pr_k$ $(k\in I)$? Das ist die gr"obste Topologie, sodass alle $\pr_k$ stetig sind (die feinste derartige ist die diskrete Topologie - fad!); $\T_X$ hat als Subbasis gerade die $\inv{\pr_k}(H_k), (H_k\in\T_k)$\\
 Nun gilt:\\
 \hspace*{2cm}$\inv{\pr_k}(H_k)=\{x=(x_i)_{i\in I}|\pr_k(x)\in H_k\}\\
@@ -1827,7 +1827,7 @@ A kompakt $\eq$ A $\framebox{totalbeschr"ankt}^\alpha \& \framebox{vollst"andig}
 \end{itemize}
 (alles ohne Beweis)
 \begin{beob}\label{6.15} zu Kompaktheitsbegiffe\\
-\includegraphics[scale=0.8]{./pic/kompaktheitsbegriffe.eps}
+\includegraphics[scale=0.8]{./pic/kompaktheitsbegriffe}
 \end{beob}
 
 \begin{definition}\label{6.16}\index{lokalkompakt}Lokalkompaktheit\\
@@ -1864,7 +1864,7 @@ $\bullet$) $\ol{V}^K\seq U$}
 Wichtige Eigenschaften lokalkompakter R"aume:
 \begin{enumerate}[(i)]
 \item Jeder lokalkompakte Raum X kann durch hinzuf"ugen eines einzigen(!) neuen Punktes ''$\infty''$ kompakifiziert werden, d.h. $X\cap\{\infty\}$ ist kompakt und die Spurtopologie ist die Ausgangstopologie. Hierzu f"ugen wir zu den in X offenen Mengen noch als neue offene Mengen $(X\setminus K)\cup \{\infty\}$ hinzu wobei K kpt.$\seq X$ {\sc Alexandroff}- oder Einpunktkompaktifizierung\\
-\includegraphics{./pic/alexandroff.eps}\\
+\includegraphics{./pic/alexandroff}\\
 \item In lokalkompakten $\trax_2$ R"aumen lassen sich je eine kompakte und eine abgeschlossene Menge ''stetig trennen'' so wie die beiden abgeschlossenen Mengen im {\sc Lemma von Urysohn} (\ref{4.7})
 \item Lokalkompakte R"aume sind besonders geeignet f"ur das gleichzeitige betreiben von Ma"stheorie und Topologie - wenn sich die Ma"se mit den Topologien vertragen sollen.
 \item Lokalkompakte $\trax_2$-R"aume sind {\sc Baire}'sche R"aume siehe Kapitel VIII.
@@ -1939,7 +1939,7 @@ Sei ($X,\T$) ein topologischer Raum, X bogenweise zusammenh"angend, dann ist X a
 \beweis{Indirekt angenommen: Sei $G_1, G_2$ eine Disjunktion von X, dann w"ahlten wir $x\in G_1$, $y\in G_2$ und verbinden x und y mit dem stetigen Pfad c. Dann liefert $\inv{c}(G_1),\inv{c}(G_2)$ eine Disjunktion von $[0,1] \wid$ - ein Widerspruch nach \ref{7.4} $(iii)\impl (i)$}
 \end{prop}
 Die Menge $\{ 0\}\times [-1,+1]\cup\{ (x,\sin(\frac{20}{x}) )|x\in (0,1]\}\seq \R^2$ mit der Spurtopologie, ist zusammenh"angend, aber nicht bogenweise zusammenh"angend ([CR] p.152-153)\\
-\includegraphics[scale=0.82]{./pic/zshg.eps}\\
+\includegraphics[scale=0.82]{./pic/zshg}\\
 (P,Q k"onnen nicht durch einen stetigen Pfad in X verbunden werden.)\\
 Allerdings gilt: Ist X zusammenh"angend und besitzt f"ur jeden $x\in X$ eine bogenweise zusammenh"angende Umgebung, dann ist X bogenweise zusammenh"angend ([CR]p.154). Damit ist jede \ul{offene} zusammenh"angende Teilmenge G (ein ''\ul{\bf G}ebiet[!]) des $\R^n$ auch bogenweise zusammenh"angend.
 
@@ -1959,7 +1959,7 @@ $$d(x,C):=\inf\{d(x,y)|y\in C\}$$
 Dann gilt:
 \begin{itemize}
 \item $d(x,C)=0\eq x\in\ol{C}$ ($\dots x_n\ra x, x_n\in C, d(x,x_n)\ra d(x,C)\dots$)\\
-\includegraphics{./pic/d(xC).eps}
+\includegraphics{./pic/d(xC)}
 \item $x\mapsto d(x,C)$ ist stetig, denn es gilt $|d(x,C) -d(y,C)|\leq d(x,y):\\
 z_n\in C, d(x,z_n)\ra d(x,C): d(x,C)\leq d(x,z_n)\leq d(x,y)+d(y,z_n)\ra d(x,y)+d(z,C)$\\
 analog $d(y,C)\leq d(x,y)+d(y,C)$.
@@ -2019,7 +2019,7 @@ Identifizieren wir X mit $\iota (X)$ $(x\leftrightarrow \iota (x), x\in X)$, dan
 \item $\widetilde{d}|_{X\times X} =d$\hfill {\scriptsize ($\widetilde{d}$ setzt d fest)}
 \item $\ol{X} = \widetilde{X}$\hfill {\scriptsize ($X$ liegt dicht in $\widetilde{X}$)}
 \end{enumerate}
-\includegraphics{./pic/vervollstandigung.eps}
+\includegraphics{./pic/vervollstandigung}
 \end{definition}
 \begin{satz}\label{8.8}{\sc "Uber Existenz und Eindeutigkeit von Vervollst"andigungen}
 \begin{enumerate}[(i)]
